@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Task and Habit Manager</title>
+    <link rel="stylesheet" href="Neustart.css">
+</head>
+
+
+
+<body>
+
+  <button class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav">
+        <button class="nav-link" data-view="home">🏠Home</button>
+          <button class="nav-link" data-view="todo">📃To-Do</button>
+        <button class="nav-link" data-view="habit">🗓️Habit</button>
+        <button class="nav-link" data-view="analytics">📈stats</button>
+        <button class="nav-link" data-view="contacts">📩info</button>
+  </nav>
+
+<section id="home">
+
+
+    
+<div class="welcome-card">
+      <h1 id="name">NEUSTART</h1>
+      
+<p id="description">
+  
+Every great life is built one habit at a time. <br>     
+ NEUSTART-100 helps you track what matters, stay <br>
+ consistent when motivation fades, and become the <br>
+ person you've been promising yourself you'd be. <br>
+
+
+ </p>
+    
+
+</div>
+
+<div id="carousel">
+
+
+  <div id="track">
+
+    <div class="box">
+      <h6>TRACK HABITS</h6>
+      <p class="carousel_p">Add your habits and mark them done</p>
+    </div>
+    <div class="box">
+        <h6>BUILD STREAKS</h6>
+      <p class="carousel_p">Stay consistent and grow your streak</p>
+
+    </div>
+    <div class="box">
+       <h6>VIEW PROGRESS</h6>
+      <p class="carousel_p">See how well you're improving</p>
+    </div>
+
+
+ <!-- duplicate -->
+
+
+
+       <div class="box">
+      <h6>TRACK HABITS</h6>
+      <p class="carousel_p">Add your habits and mark them done</p>
+    </div>
+    <div class="box">
+        <h6>BUILD STREAKS</h6>
+      <p class="carousel_p">Stay consistent and grow your streak</p>
+
+    </div>
+    <div class="box">
+       <h6>VIEW PROGRESS</h6>
+      <p class="carousel_p">See how well you're improving</p>
+    </div>
+
+
+    <!-- duplicate -->
+
+
+       <div class="box">
+      <h6>TRACK HABITS</h6>
+      <p class="carousel_p">Add your habits and mark them done</p>
+    </div>
+    <div class="box">
+        <h6>BUILD STREAKS</h6>
+      <p class="carousel_p">Stay consistent and grow your streak</p>
+
+    </div>
+    <div class="box">
+       <h6>VIEW PROGRESS</h6>
+      <p class="carousel_p">See how well you're improving</p>
+    </div>
+
+    <!-- duplicate -->
+
+    
+       <div class="box">
+      <h6>TRACK HABITS</h6>
+      <p class="carousel_p">Add your habits and mark them done</p>
+    </div>
+    <div class="box">
+        <h6>BUILD STREAKS</h6>
+      <p class="carousel_p">Stay consistent and grow your streak</p>
+
+    </div>
+    <div class="box">
+       <h6>VIEW PROGRESS</h6>
+      <p class="carousel_p">See how well you're improving</p>
+    </div>
+
+
+  </div>
+</div>
+    
+
+
+      
+       
+</section>
+
+
+
+
+    <section id="todo">
+       <!-- <h1 id="heading-todo">ToDo Page</h1> -->
+
+       
+<div id="input-div">
+ 
+        <input id="input_box" type="text"> 
+        <button id="submit">submit</button>
+</div>
+      
+        
+
+         <div id="cards-container">
+
+          
+          <ul id="todo_list"></ul>
+
+         <div id="todo_card">
+          <h2>Todo-Card</h2>
+    
+
+        </div>
+
+
+        <div id="doing_card">
+         <h2>Doing-Card</h2> 
+          <ul id="doing_list"></ul>
+        </div>
+
+        <div id="done_card">
+         <h2> Done-Card</h2>
+         <ul id="done_list"></ul>
+        </div>
+
+
+         </div>
+      
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="habit">
+
+
+      <!-- <h1>  Habit Page</h1> -->
+
+      <div class="modal">
+       
+
+
+        <h1>HABIT REVIEW</h1>
+        <p style=" text-transform: uppercase;" id="name_of_habit"></p>
+        <p style=" text-transform: uppercase;"  id="target_days"></p>
+        <p style=" text-transform: uppercase;" id="category_of_habit"></p>
+        <p style=" text-transform: uppercase;" id="date"></p>
+
+      </div>
+
+
+      <div id="soso">
+      
+        <form action="" id="form">
+          <input class="input" placeholder="Name of Habit" id="habit_name" type="text" required>
+          <input class="input" placeholder="Number of Days" id="num_of_days" type="number" required>
+          <select id="category">
+            <option  value=""disabled selected>Select a Category</option>
+            <option class="option" value="Health & Fitness">Health & Fitness</option>
+            <option class="option" value="Mind & Learning">Mind & Learning</option>
+            <option class="option" value="Spiritual">Spiritual</option>
+            <option class="option" value="Productivity">Productivity</option>
+            <option class="option" value="Productivity">Education</option>
+            <option class="option" value="Social">Social</option>
+            <option class="option" value="Finance">Finance</option>
+            <option class="option" value="Creativity">Creativity</option>
+          </select>
+          <input id="habit_submit" type="submit" disabled>
+
+                                                                                                                              
+        </form>
+
+        <div id="habits_holder">
+          <h1>Habits Holder</h1>
+        </div>
+
+        
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="analytics">
+        <h1>Analytics</h1>
+
+        <div id="charts-conatiner">
+              <div id="donut">
+          <canvas id="myDonutChart" ></canvas>
+
+        </div>
+          
+        <div id="bar">
+           <canvas id="myBarChart"></canvas>
+
+        </div>
+
+        </div>
+       
+    
+          
+        
+    </section>
+
+    <section id="contacts">
+
+
+      <div  class="contacts_con">
+
+
+
+
+        
+        <div class="contact_con">
+    <h1 class="contact_me">CONTACT ME</h1>
+   <p><span class="style">📞PHONE:</span> +234 705 965 1307</p>
+   <p><span class="style">✉️EMAIL:</span> patrickbethel38@gmail.com</p>
+
+
+</div>
+
+<div class="social_con">
+  <h1 class="contact_me" >SOCIALS</h1>
+  <p><span class="style">INSTAGRAM:</span> @irenzi_ai</p>
+  <p><span class="style">X(TWITTER):</span> IRENZI</p>
+  <p><span class="style">TIKTOK:</span> @patrick_ban25</p>
+  <p><span class="style">GITHUB:</span> patrickalex911</p>
+</div>
+
+      </div>
+
+       
+    </section>
+   
+<script src="chart.umd.min.js"></script>
+  <script src="Neustart.js"></script>
+</body>
+</html>
+
+
+
